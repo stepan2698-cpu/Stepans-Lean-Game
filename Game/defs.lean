@@ -44,3 +44,10 @@ theorem add_succ (a b : ℕ) : (a + succ b = succ (a + b)) := rfl
 
 macro "nth_rewrite" c:optConfig ppSpace nums:(num)+ s:rwRuleSeq loc:(location)? : tactic => do
   `(tactic| rewrite $[$(getConfigItems c)]* (occs := .pos [$[$nums],*]) $s:rwRuleSeq $(loc)?)
+
+macro "induction'" a:Lean.Parser.Tactic.elimTarget "with" d:ident hd:ident : tactic => do
+  `(tactic|
+    induction $a with
+    | zero => ?_
+    | succ $d $hd => ?_
+  )

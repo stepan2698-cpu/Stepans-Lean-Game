@@ -21,8 +21,8 @@ in that `rw` tries to apply `rfl` automatically after rewriting. This makes the 
 open mygame Natural
 
 Statement zero_add (a : ℕ) : zero + a = a := by
-  induction a with
-    | zero => rfl
-    | succ d => rw [add_succ, a_ih]
+  induction' a with d hd
+  · rfl
+  · rw [add_succ, hd]
 
-NewTactic induction
+NewTactic induction'

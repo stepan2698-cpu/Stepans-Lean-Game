@@ -9,8 +9,3 @@ World "Tutorial"
 Title "Tutorial"
 
 Introduction "This is a tutorial world introducing basic Lean tactics."
-
-World "Addition"
-Title "Addition World"
-
-Introduction "This is the world about addition."
