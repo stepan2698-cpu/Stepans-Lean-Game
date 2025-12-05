@@ -1,5 +1,4 @@
-import Game.Levels.Tutorial
-import Game.Levels.Multiplication.multiplication
+import Game.Levels.Multiplication
 
 -- Here's what we'll put on the title screen
 Title "Stepan's Lean Game"

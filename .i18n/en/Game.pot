@@ -8,7 +8,7 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#: Game.Levels.Addition.addition1
+#: Game.Levels.Addition
 msgid "0 + a = a"
 msgstr ""
 
@@ -16,20 +16,16 @@ msgstr ""
 msgid ""
 msgstr ""
 
-#: GameServer.RpcHandlers
-msgid "level completed! 🎉"
+#: Game.Levels.Multiplication
+msgid "a * (b + c) = a * b + a * c"
 msgstr ""
 
-#: Game.Levels.Addition.addition2
-msgid "Adding successor from the left"
-msgstr ""
-
-#: Game.Levels.Tutorial.tutorial4
-msgid "a + 0 = a"
-msgstr ""
-
-#: Game.Levels.Tutorial.tutorial6
+#: Game.Levels.Tutorial
 msgid "2 + 2 = 4"
+msgstr ""
+
+#: Game.Levels.Tutorial
+msgid "a + 0 = a"
 msgstr ""
 
 #: GameServer.RpcHandlers
@@ -37,11 +33,100 @@ msgid "intermediate goal solved! 🎉"
 msgstr ""
 
 #: Game.Levels.Tutorial
-msgid "Tutorial"
+msgid "rewrite Tutorial"
 msgstr ""
 
-#: Game.Levels.Tutorial.tutorial2
-msgid "rewrite Tutorial"
+#: Game.Levels.Addition
+#: Game.Levels.Addition
+msgid "(a + b) + с = (a + c) + b"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "succ(a) * b = a * b + b"
+msgstr ""
+
+#: Game.Levels.Tutorial
+msgid "Two plus two is four"
+msgstr ""
+
+#: Game.Levels.Addition
+msgid "Left-associativity of Addition"
+msgstr ""
+
+#: Game
+msgid "Stepan's Lean Game"
+msgstr ""
+
+#: Game.Levels.Addition
+msgid "Commutativity of Addition"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "1 * a = a"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed with warnings… 🎭"
+msgstr ""
+
+#: Game.Levels.Tutorial
+msgid "This is a tutorial world introducing basic Lean tactics."
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "a * 2 = a + a"
+msgstr ""
+
+#. §0: `mul_zero`
+#. §1: `mul_succ`
+#: Game.Levels.Multiplication
+msgid "Multiplication on the natural numbers is defined by\n"
+" def mul : ℕ → ℕ → ℕ\n"
+"   | _, zero => zero\n"
+"   | a, succ b => add (mul a b) a\n"
+"Therfore, theorems §0 and §1 are true by definition."
+msgstr ""
+
+#: Game.Levels.Addition
+msgid "Adding zero from the left"
+msgstr ""
+
+#: Game.Levels.Addition
+#: Game.Levels.Addition
+msgid "a + b = b + a"
+msgstr ""
+
+#: Game.Levels.Tutorial
+msgid "Rewriting theorems"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "a * 0 = 0"
+msgstr ""
+
+#: Game
+msgid "This is my draft of the Lean game which extends the natural number game up to\n"
+"proving the Fundamental Theorem of Arithmetic."
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "(a * b) * c = a * (b * c)"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "Multiplication World"
+msgstr ""
+
+#: GameServer.RpcHandlers
+msgid "level completed! 🎉"
+msgstr ""
+
+#: Game.Levels.Addition
+msgid "Adding successor from the left"
+msgstr ""
+
+#: Game.Levels.Tutorial
+msgid "Tutorial"
 msgstr ""
 
 #. §0: `h : A = B`
@@ -49,37 +134,16 @@ msgstr ""
 #. §2: `rewrite [h]`
 #. §3: `y`
 #. §4: `x + three`
-#: Game.Levels.Tutorial.tutorial2
+#: Game.Levels.Tutorial
 msgid "To use an assumption of the form §0, you can use the §1 command.\n"
 "In the example below, typing §2 will change §3 to §4 in the goal."
-msgstr ""
-
-#: Game.Levels.Addition.addition5
-#: Game.Levels.Addition.addition6
-msgid "(a + b) + с = (a + c) + b"
-msgstr ""
-
-#: Game.Levels.Multiplication.multiplication
-msgid "succ(a) * b = a * b + b"
 msgstr ""
 
 #: Game.Levels.Addition
 msgid "Addition World"
 msgstr ""
 
-#: Game.Levels.Tutorial.tutorial6
-msgid "Two plus two is four"
-msgstr ""
-
-#: Game
-msgid "Stepan's Lean Game"
-msgstr ""
-
-#: Game.Levels.Addition.addition6
-msgid "Left-associativity of Addition"
-msgstr ""
-
-#: Game.Levels.Multiplication.multiplication
+#: Game.Levels.Multiplication
 msgid "a * succ(b) = a * b + a"
 msgstr ""
 
@@ -90,22 +154,10 @@ msgstr ""
 #. §4: `B`
 #. §5: `nth_rewrite 1 [h]`
 #. §6: `nth_rewrite 2 [h]`
-#: Game.Levels.Tutorial.tutorial6
+#: Game.Levels.Tutorial
 msgid "The §0 command instructs Lean to change **all** instances of §1 in the\n"
 "goal to §2. If you have two instances of §3, and would like to change only one of them to\n"
 "§4, you can instruct Lean to do so by typing either §5 or §6."
-msgstr ""
-
-#: Game.Levels.Addition.addition3
-msgid "Commutativity of Addition"
-msgstr ""
-
-#: GameServer.RpcHandlers
-msgid "level completed with warnings… 🎭"
-msgstr ""
-
-#: Game.Levels.Tutorial
-msgid "This is a tutorial world introducing basic Lean tactics."
 msgstr ""
 
 #. §0: `add_zero`
@@ -118,7 +170,7 @@ msgstr ""
 #. §7: `rewrite [add_zero c]`
 #. §8: `c + zero`
 #. §9: `c`
-#: Game.Levels.Tutorial.tutorial4
+#: Game.Levels.Tutorial
 msgid "This is our first theorem, §0. A theorem is like an assumption that is always\n"
 "available. If you type §1, Lean will find the first instance of\n"
 "the expression §2 in the goal and change it to §3.\n"
@@ -128,39 +180,20 @@ msgid "This is our first theorem, §0. A theorem is like an assumption that is a
 "and change it to §9."
 msgstr ""
 
-#: Game.Levels.Addition.addition4
+#: Game.Levels.Addition
 msgid "Associativity of Addition"
 msgstr ""
 
-#: Game.Levels.Tutorial.tutorial1
+#: Game.Levels.Tutorial
 msgid "rfl Tutorial"
 msgstr ""
 
-#. §0: `mul_zero`
-#. §1: `mul_succ`
-#: Game.Levels.Multiplication.multiplication
-msgid "Multiplication on the natural numbers is defined by\n"
-" def mul : ℕ → ℕ → ℕ\n"
-"   | _, zero => zero\n"
-"   | a, succ b => add (mul a b) a\n"
-"Therfore, theorems §0 and §1 are true by definition."
+#: Game.Levels.Multiplication
+msgid "(a + b) * c = a * c + b * c"
 msgstr ""
 
-#: Game.Levels.Addition.addition1
-msgid "Adding zero from the left"
-msgstr ""
-
-#: Game.Levels.Addition.addition3
-#: Game.Levels.Addition.addition4
-msgid "a + b = b + a"
-msgstr ""
-
-#: Game.Levels.Tutorial.tutorial3
+#: Game.Levels.Tutorial
 msgid "Rewriting definitions"
-msgstr ""
-
-#: Game.Levels.Tutorial.tutorial4
-msgid "Rewriting theorems"
 msgstr ""
 
 #. §0: `one`
@@ -172,15 +205,23 @@ msgstr ""
 #. §6: `succ one`
 #. §7: `rewrite [← h]`
 #. §8: `←`
-#: Game.Levels.Tutorial.tutorial3
+#: Game.Levels.Tutorial
 msgid "In our game, §0 is defined as §1, and §2 is defined\n"
 "as §3. You can type §4 to change §5 to §6 in the goal.\n"
 "To rewrite backwards, you need to type §7. To type §8, use the \\\\l shortcut.\n"
 "For example, `rewrite [← one] also works."
 msgstr ""
 
-#: Game.Levels.Multiplication.multiplication
+#: Game.Levels.Multiplication
 msgid "a * b = b * a"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "(a * b) * c = (a * c) * b"
+msgstr ""
+
+#: Game.Levels.Addition
+msgid "succ(a) + b = succ(a + b)"
 msgstr ""
 
 #. §0: `induction' a with d hd`
@@ -197,7 +238,7 @@ msgstr ""
 #. §11: `rewrite`
 #. §12: `rw`
 #. §13: `rfl`
-#: Game.Levels.Addition.addition1
+#: Game.Levels.Addition
 msgid "To prove this next theorem, you need to use induction. This is done by using the command\n"
 "§0, where §1 is the variable you want to do induction on. This\n"
 "creates two subgoals:\n"
@@ -212,43 +253,38 @@ msgid "To prove this next theorem, you need to use induction. This is done by us
 "in that §12 tries to apply §13 automatically after rewriting. This makes the code shorter."
 msgstr ""
 
-#: Game.Levels.Addition.addition2
-msgid "succ(a) + b = succ(a + b)"
-msgstr ""
-
-#: Game.Levels.Multiplication.multiplication
+#: Game.Levels.Multiplication
 msgid "a * 1 = a"
 msgstr ""
 
-#: Game.Levels.Tutorial.tutorial5
+#: Game.Levels.Multiplication
+msgid "a * (b * c) = b * (a * c)"
+msgstr ""
+
+#: Game.Levels.Tutorial
 msgid "succ a = a + 1"
 msgstr ""
 
-#: Game.Levels.Multiplication.multiplication
+#: Game.Levels.Multiplication
 msgid "0 * a = 0"
 msgstr ""
 
-#: Game
-msgid "This is my draft of the Lean game which extends the natural number game up to\n"
-"proving the Fundamental Theorem of Arithmetic."
-msgstr ""
-
-#: Game.Levels.Multiplication.multiplication
-msgid "a * 0 = 0"
-msgstr ""
-
-#: Game.Levels.Addition.addition5
+#: Game.Levels.Addition
 msgid "Right-associativity of Addition"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "2 * a = a + a"
 msgstr ""
 
 #. §0: `A = A`
 #. §1: `rfl`
 #. §2: `rfl`
-#: Game.Levels.Tutorial.tutorial1
+#: Game.Levels.Tutorial
 msgid "To prove the goal of the form §0, you need to use the §1 command. Type §2\n"
 "in the example below to close the goal."
 msgstr ""
 
-#: Game.Levels.Tutorial.tutorial5
+#: Game.Levels.Tutorial
 msgid "Adding one"
 msgstr ""
