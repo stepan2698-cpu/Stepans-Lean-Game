@@ -1,3 +1,6 @@
+import Lean
+open Lean Elab Tactic Meta Parser.Tactic
+
 namespace mygame
 
 inductive Natural where
@@ -33,3 +36,10 @@ def pow : ℕ → ℕ → ℕ
 
 instance : HPow ℕ ℕ ℕ :=
   { hPow := pow }
+
+theorem add_zero (a : ℕ) : a + zero = a := rfl
+
+theorem add_succ (a b : ℕ) : (a + succ b = succ (a + b)) := rfl
+
+macro "nth_rewrite" c:optConfig ppSpace nums:(num)+ s:rwRuleSeq loc:(location)? : tactic => do
+  `(tactic| rewrite $[$(getConfigItems c)]* (occs := .pos [$[$nums],*]) $s:rwRuleSeq $(loc)?)
