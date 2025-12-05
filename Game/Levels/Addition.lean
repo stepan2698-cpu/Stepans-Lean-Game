@@ -5,8 +5,7 @@ open mygame Natural
 World "Addition"
 Title "Addition World"
 
-World "Addition"
-Level 1
+World "Addition" Level 1
 
 Title "Adding zero from the left"
 
@@ -33,8 +32,7 @@ Statement zero_add (a : ℕ) : zero + a = a := by
 
 NewTactic induction' rw
 
-World "Addition"
-Level 2
+World "Addition" Level 2
 
 Title "Adding successor from the left"
 
@@ -48,8 +46,7 @@ Statement succ_add (a b : ℕ) : succ a + b = succ (a + b) := by
   · rfl
   · rw [add_succ, hd, add_succ]
 
-World "Addition"
-Level 3
+World "Addition" Level 3
 
 Title "Commutativity of Addition"
 
@@ -63,8 +60,7 @@ Statement add_comm (a b : ℕ) : a + b = b + a := by
   · rw [add_zero, zero_add]
   · rw [add_succ, hd, succ_add]
 
-World "Addition"
-Level 4
+World "Addition" Level 4
 
 Title "Associativity of Addition"
 
@@ -78,8 +74,7 @@ Statement add_assoc (a b c : ℕ) : a + b + c = a + (b + c) := by
   · rfl
   · rw [add_succ, hd, add_succ, add_succ]
 
-World "Addition"
-Level 5
+World "Addition" Level 5
 
 Title "Right-associativity of Addition"
 

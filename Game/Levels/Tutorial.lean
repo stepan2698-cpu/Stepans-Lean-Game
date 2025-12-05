@@ -5,8 +5,7 @@ Title "Tutorial"
 
 Introduction "This is a tutorial world introducing basic Lean tactics."
 
-World "Tutorial"
-Level 1
+World "Tutorial" Level 1
 
 Title "rfl Tutorial"
 
@@ -20,8 +19,7 @@ Statement (x q : ℕ) : four * x + q = four * x + q := by
 
 NewTactic rfl
 
-World "Tutorial"
-Level 2
+World "Tutorial" Level 2
 
 Title "rewrite Tutorial"
 
@@ -36,8 +34,7 @@ Statement (x y : ℕ) (h : y = x + three) : two * y = two * (x + three) := by
 
 NewTactic rewrite
 
-World "Tutorial"
-Level 3
+World "Tutorial" Level 3
 
 Title "Rewriting definitions"
 
@@ -53,8 +50,7 @@ Statement : two = succ (succ zero) := by
   rewrite [one]
   rfl
 
-World "Tutorial"
-Level 4
+World "Tutorial" Level 4
 
 Title "Rewriting theorems"
 
@@ -78,8 +74,7 @@ TheoremDoc mygame.add_zero as "add_zero" in "Addition"
 
 NewTheorem mygame.add_zero
 
-World "Tutorial"
-Level 5
+World "Tutorial" Level 5
 
 Title "Adding one"
 
@@ -94,8 +89,7 @@ Statement add_one (a : ℕ) : succ a = a + one := by
   rewrite [add_zero]
   rfl
 
-World "Tutorial"
-Level 6
+World "Tutorial" Level 6
 
 Title "Two plus two is four"
 
