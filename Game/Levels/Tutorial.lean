@@ -3,10 +3,14 @@ import Game.Levels.Tutorial.tutorial2
 import Game.Levels.Tutorial.tutorial3
 import Game.Levels.Tutorial.tutorial4
 import Game.Levels.Tutorial.tutorial6
+import Game.Levels.Addition
 
 World "Tutorial"
 Title "Tutorial"
 
-Introduction "
-This introduction is shown before one enters level 1 of the demo world. Use markdown.
-"
+Introduction "This is a tutorial world introducing basic Lean tactics."
+
+World "Addition"
+Title "Addition World"
+
+Introduction "This is the world about addition."

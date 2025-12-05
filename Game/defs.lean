@@ -1,4 +1,5 @@
 import Lean
+import Batteries
 open Lean Elab Tactic Meta Parser.Tactic
 
 namespace mygame

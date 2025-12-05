@@ -12,19 +12,47 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 msgid "level completed with warnings… 🎭"
 msgstr ""
 
-#: Game.Levels.Tutorial
-msgid "This introduction is shown before one enters level 1 of the demo world. Use markdown."
-msgstr ""
-
 #: Game
 msgid ""
+msgstr ""
+
+#: Game.Levels.Tutorial
+msgid "This is a tutorial world introducing basic Lean tactics."
+msgstr ""
+
+#. §0: `add_zero`
+#. §1: `rewrite [add_zero]`
+#. §2: `something + zero`
+#. §3: `something`
+#. §4: `add_zero`
+#. §5: `add_zero c`
+#. §6: `c + zero = zero`
+#. §7: `rewrite [add_zero c]`
+#. §8: `c + zero`
+#. §9: `c`
+#: Game.Levels.Tutorial.tutorial4
+msgid "This is our first theorem, §0. A theorem is like an assumption that is always\n"
+"available. If you type §1, Lean will find the first instance of\n"
+"the expression §2 in the goal and change it to §3.\n"
+"You can also instruct Lean to rewrite the specific instance of §4 which you want.\n"
+"For example, §5 is the name for the equality §6. Typing\n"
+"§7 will instruct Lean to find specifically the expression §8\n"
+"and change it to §9."
 msgstr ""
 
 #: GameServer.RpcHandlers
 msgid "level completed! 🎉"
 msgstr ""
 
-#: Game.Levels.Tutorial.L01_HelloWorld
+#: Game.Levels.Tutorial.tutorial6
+msgid "2 + 2 = 4"
+msgstr ""
+
+#: Game.Levels.Tutorial.tutorial4
+msgid "a + 0 = a"
+msgstr ""
+
+#: Game.Levels.Tutorial.tutorial1
 msgid "rfl Tutorial"
 msgstr ""
 
@@ -32,27 +60,101 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
+#: Game.Levels.Tutorial
+msgid "Tutorial"
+msgstr ""
+
+#. §0: `h : A = B`
+#. §1: `rewrite [h]`
+#. §2: `A`
+#. §3: `B`
+#: Game.Levels.Tutorial.tutorial2
+msgid "If §0, then §1 changes all occurences of §2 to §3."
+msgstr ""
+
+#. §0: `A = B`
+#. §1: `A`
+#. §2: `B`
+#: Game.Levels.Tutorial.tutorial1
+msgid "rfl proves the goal of the form §0, if §1 and §2 are equal by definition."
+msgstr ""
+
+#: Game.Levels.Tutorial.tutorial3
+msgid "Rewriting definitions"
+msgstr ""
+
+#: Game.Levels.Tutorial.tutorial2
+msgid "rewrite Tutorial"
+msgstr ""
+
+#. §0: `one`
+#. §1: `succ zero`
+#. §2: `two`
+#. §3: `succ one`
+#. §4: `rewrite [two]`
+#. §5: `two`
+#. §6: `succ one`
+#. §7: `rewrite [← h]`
+#. §8: `←`
+#: Game.Levels.Tutorial.tutorial3
+msgid "In our game, §0 is defined as §1, and §2 is defined\n"
+"as §3. You can type §4 to change §5 to §6 in the goal.\n"
+"To rewrite backwards, you need to type §7. To type §8, use the \\\\l shortcut.\n"
+"For example, `rewrite [← one] also works."
+msgstr ""
+
+#: Game.Levels.Tutorial.tutorial4
+msgid "Rewriting theorems"
+msgstr ""
+
+#. §0: `h : A = B`
+#. §1: `rewrite [h]`
+#. §2: `rewrite [h]`
+#. §3: `y`
+#. §4: `x + three`
+#: Game.Levels.Tutorial.tutorial2
+msgid "To use an assumption of the form §0, you can use the §1 command.\n"
+"In the example below, typing §2 will change §3 to §4 in the goal."
+msgstr ""
+
+#: Game.Levels.Tutorial.tutorial5
+msgid "succ a = a + 1"
+msgstr ""
+
 #: Game
 msgid "This is my draft of the Lean game which extends the natural number game up to\n"
 "proving the Fundamental Theorem of Arithmetic."
 msgstr ""
 
-#: Game.Levels.Tutorial
-msgid "Tutorial"
+#: Game.Levels.Tutorial.tutorial6
+msgid "Two plus two is four"
 msgstr ""
 
 #: Game
 msgid "Stepan's Lean Game"
 msgstr ""
 
-#: Game.Levels.Tutorial.L01_HelloWorld
-msgid "This last message appears if the level is solved."
-msgstr ""
-
 #. §0: `A = A`
 #. §1: `rfl`
 #. §2: `rfl`
-#: Game.Levels.Tutorial.L01_HelloWorld
+#: Game.Levels.Tutorial.tutorial1
 msgid "To prove the goal of the form §0, you need to use the §1 command. Type §2\n"
 "in the example below to close the goal."
+msgstr ""
+
+#. §0: `rewrite [h : A = B]`
+#. §1: `A`
+#. §2: `B`
+#. §3: `A`
+#. §4: `B`
+#. §5: `nth_rewrite 1 [h]`
+#. §6: `nth_rewrite 2 [h]`
+#: Game.Levels.Tutorial.tutorial6
+msgid "The §0 command instructs Lean to change **all** instances of §1 in the\n"
+"goal to §2. If you have two instances of §3, and would like to change only one of them to\n"
+"§4, you can instruct Lean to do so by typing either §5 or §6."
+msgstr ""
+
+#: Game.Levels.Tutorial.tutorial5
+msgid "Adding one"
 msgstr ""
