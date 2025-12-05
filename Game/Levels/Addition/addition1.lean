@@ -1,4 +1,5 @@
 import Game.Metadata
+import Game.Levels.Tutorial.tutorial6
 
 World "Addition"
 Level 1

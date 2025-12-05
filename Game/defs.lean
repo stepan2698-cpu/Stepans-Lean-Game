@@ -42,6 +42,10 @@ theorem add_zero (a : ℕ) : a + zero = a := rfl
 
 theorem add_succ (a b : ℕ) : (a + succ b = succ (a + b)) := rfl
 
+theorem mul_zero (a : ℕ) : a * zero = zero := rfl
+
+theorem mul_succ (a b : ℕ) : a * b.succ = a * b + a := rfl
+
 macro "nth_rewrite" c:optConfig ppSpace nums:(num)+ s:rwRuleSeq loc:(location)? : tactic => do
   `(tactic| rewrite $[$(getConfigItems c)]* (occs := .pos [$[$nums],*]) $s:rwRuleSeq $(loc)?)
 
