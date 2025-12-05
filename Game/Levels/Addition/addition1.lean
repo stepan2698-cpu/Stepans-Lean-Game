@@ -20,6 +20,9 @@ in that `rw` tries to apply `rfl` automatically after rewriting. This makes the 
 
 open mygame Natural
 
+/--0 + a = a-/
+TheoremDoc zero_add as "zero_add"
+
 Statement zero_add (a : ℕ) : zero + a = a := by
   induction' a with d hd
   · rfl

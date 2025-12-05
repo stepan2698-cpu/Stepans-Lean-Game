@@ -21,6 +21,6 @@ Statement (a b c : ℕ) : a + (b + zero) + (c + zero) = a + b + c := by
   rfl
 
 /--a + 0 = a-/
-TheoremDoc mygame.add_zero as "add_zero"
+TheoremDoc mygame.add_zero as "add_zero" in "Addition"
 
 NewTheorem mygame.add_zero

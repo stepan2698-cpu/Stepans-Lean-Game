@@ -14,7 +14,4 @@ Statement (x y : ℕ) (h : y = x + three) : two * y = two * (x + three) := by
   rewrite [h]
   rfl
 
-/--If `h : A = B`, then `rewrite [h]` changes all occurences of `A` to `B`.-/
-TacticDoc rewrite
-
 NewTactic rewrite

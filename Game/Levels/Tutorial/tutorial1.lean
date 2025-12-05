@@ -13,7 +13,4 @@ open mygame Natural
 Statement (x q : ℕ) : four * x + q = four * x + q := by
   rfl
 
-/--rfl proves the goal of the form `A = B`, if `A` and `B` are equal by definition.-/
-TacticDoc rfl
-
 NewTactic rfl
