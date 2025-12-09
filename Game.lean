@@ -1,4 +1,5 @@
-import Game.Levels.Exponentiation
+import Game.Metadata
+import Game.Implication.implication
 
 -- Here's what we'll put on the title screen
 Title "Stepan's Lean Game"

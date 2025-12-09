@@ -1,4 +1,4 @@
-import Game.Levels.Addition
+import Game.Induction.Addition
 
 open mygame Natural
 

@@ -1,4 +1,4 @@
-import Game.Levels.Multiplication
+import Game.Induction.Multiplication
 
 open mygame Natural
 

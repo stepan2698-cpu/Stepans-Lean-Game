@@ -1,4 +1,4 @@
-import Game.Levels.Tutorial
+import Game.Induction.Tutorial
 
 open mygame Natural
 
