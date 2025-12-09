@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.23.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-04\n"
+"POT-Creation-Date: 2025-12-08\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -18,6 +18,10 @@ msgstr ""
 
 #: Game.Levels.Multiplication
 msgid "a * (b + c) = a * b + a * c"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "Right-commutativity of multiplication"
 msgstr ""
 
 #: Game.Levels.Tutorial
@@ -42,6 +46,10 @@ msgid "(a + b) + с = (a + c) + b"
 msgstr ""
 
 #: Game.Levels.Multiplication
+msgid "Left-commutativity of multiplication"
+msgstr ""
+
+#: Game.Levels.Multiplication
 msgid "succ(a) * b = a * b + b"
 msgstr ""
 
@@ -49,8 +57,8 @@ msgstr ""
 msgid "Two plus two is four"
 msgstr ""
 
-#: Game.Levels.Addition
-msgid "Left-associativity of Addition"
+#: Game.Levels.Multiplication
+msgid "Commutativity of Multiplication"
 msgstr ""
 
 #: Game
@@ -58,7 +66,15 @@ msgid "Stepan's Lean Game"
 msgstr ""
 
 #: Game.Levels.Addition
+msgid "Left-associativity of Addition"
+msgstr ""
+
+#: Game.Levels.Addition
 msgid "Commutativity of Addition"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "Multiplication by one from the left"
 msgstr ""
 
 #: Game.Levels.Multiplication
@@ -101,7 +117,8 @@ msgid "Rewriting theorems"
 msgstr ""
 
 #: Game.Levels.Multiplication
-msgid "a * 0 = 0"
+#: Game.Levels.Multiplication
+msgid "Multiplication by two from the right"
 msgstr ""
 
 #: Game
@@ -110,7 +127,15 @@ msgid "This is my draft of the Lean game which extends the natural number game u
 msgstr ""
 
 #: Game.Levels.Multiplication
+msgid "a * 0 = 0"
+msgstr ""
+
+#: Game.Levels.Multiplication
 msgid "(a * b) * c = a * (b * c)"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "Multiplication by zero from the left"
 msgstr ""
 
 #: Game.Levels.Multiplication
@@ -123,6 +148,18 @@ msgstr ""
 
 #: Game.Levels.Addition
 msgid "Adding successor from the left"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "Multiplication by the successor from the left"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "Associativity of multiplication"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "Multiplication by one from the right"
 msgstr ""
 
 #: Game.Levels.Tutorial
@@ -141,6 +178,10 @@ msgstr ""
 
 #: Game.Levels.Addition
 msgid "Addition World"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "Right distributivity of multiplication"
 msgstr ""
 
 #: Game.Levels.Multiplication
@@ -213,11 +254,11 @@ msgid "In our game, §0 is defined as §1, and §2 is defined\n"
 msgstr ""
 
 #: Game.Levels.Multiplication
-msgid "a * b = b * a"
+msgid "(a * b) * c = (a * c) * b"
 msgstr ""
 
 #: Game.Levels.Multiplication
-msgid "(a * b) * c = (a * c) * b"
+msgid "a * b = b * a"
 msgstr ""
 
 #: Game.Levels.Addition
@@ -254,11 +295,11 @@ msgid "To prove this next theorem, you need to use induction. This is done by us
 msgstr ""
 
 #: Game.Levels.Multiplication
-msgid "a * 1 = a"
+msgid "a * (b * c) = b * (a * c)"
 msgstr ""
 
 #: Game.Levels.Multiplication
-msgid "a * (b * c) = b * (a * c)"
+msgid "a * 1 = a"
 msgstr ""
 
 #: Game.Levels.Tutorial
@@ -287,4 +328,8 @@ msgstr ""
 
 #: Game.Levels.Tutorial
 msgid "Adding one"
+msgstr ""
+
+#: Game.Levels.Multiplication
+msgid "Left distributiviy of multiplication"
 msgstr ""
