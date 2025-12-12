@@ -16,6 +16,7 @@ msgstr ""
 msgid "If succ(a) = succ(b), then a = b"
 msgstr ""
 
+#: Game.Implication.Cancellation
 #: Game
 msgid ""
 msgstr ""
@@ -271,6 +272,10 @@ msgstr ""
 #: Game.Induction.Multiplication
 #: Game.Induction.Multiplication
 msgid "Multiplication by two from the right"
+msgstr ""
+
+#: Game.Implication.Cancellation
+msgid "Cancellation World"
 msgstr ""
 
 #: Game.Implication.Predecessor
