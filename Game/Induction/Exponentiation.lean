@@ -2,7 +2,7 @@ import Game.Induction.Multiplication
 
 open mygame Natural
 
-World "Exponnetiation"
+World "Exponentiation"
 Title "Exponentiation World"
 
 Introduction "Exponentiation on the natural numbers is defined by

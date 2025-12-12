@@ -59,3 +59,9 @@ macro "induction'" a:Lean.Parser.Tactic.elimTarget "with" d:ident hd:ident : tac
     | zero => ?_
     | succ $d $hd => ?_
   )
+
+macro "cases'" a:Lean.Parser.Tactic.elimTarget "with" b:ident : tactic => do
+  `(tactic|
+    cases $a with
+    | zero => ?_
+    | succ $b => ?_)
