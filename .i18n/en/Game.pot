@@ -12,7 +12,7 @@ msgstr "Project-Id-Version: Game v4.23.0\n"
 msgid "0 + a = a"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "If succ(a) = succ(b), then a = b"
 msgstr ""
 
@@ -46,7 +46,7 @@ msgstr ""
 msgid "a * (b + c) = a * b + a * c"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "is_zero zero"
 msgstr ""
 
@@ -70,7 +70,7 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "0 ≠ succ(n)"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgstr ""
 #. §1: `cases' a with b`
 #. §2: `zero`
 #. §3: `succ b`
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "In this world, we prove the remaining two Peano axioms (yes, you heard that right!)\n"
 "in Lean. Firs, we define the 'pred' function as\n"
 "\n"
@@ -240,7 +240,7 @@ msgstr ""
 msgid "Adding zero from the left"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "In this level, we define a function is_zero by\n"
 "\n"
 "def is_zero : ℕ → Prop\n"
@@ -261,7 +261,7 @@ msgstr ""
 msgid "a + b = b + a"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "pred(succ(a))=a"
 msgstr ""
 
@@ -278,7 +278,7 @@ msgstr ""
 msgid "Cancellation World"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "1 ≠ 0"
 msgstr ""
 
@@ -295,7 +295,7 @@ msgstr ""
 msgid "a * 0 = 0"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "pred(0)=0"
 msgstr ""
 
@@ -311,7 +311,7 @@ msgstr ""
 msgid "Multiplication World"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "succ n ≠ 0"
 msgstr ""
 
@@ -414,7 +414,7 @@ msgstr ""
 msgid "a ^ 2 = a * a"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "¬ is_zero (succ n)"
 msgstr ""
 
@@ -487,7 +487,7 @@ msgstr ""
 msgid "0 ^ (succ(m)) = 0"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "0 ≠ 1"
 msgstr ""
 
@@ -539,11 +539,11 @@ msgstr ""
 msgid "Right-associativity of Addition"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "If a ≠ 0, then succ(pred(a))=a"
 msgstr ""
 
-#: Game.Implication.Predecessor
+#: Game.Implication.predecessor
 msgid "Predecessor World"
 msgstr ""
 

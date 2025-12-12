@@ -1,4 +1,4 @@
-import Game.Implication.Predecessor
+import Game.Implication.predecessor
 
 open mygame Natural
 namespace mygame
