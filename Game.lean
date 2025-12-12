@@ -1,5 +1,5 @@
 import Game.Metadata
-import Game.Implication.implication
+import Game.Implication.Cancellation
 
 -- Here's what we'll put on the title screen
 Title "Stepan's Lean Game"
